@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:student_manag_provider/provider/add_student_provider.dart';
+import 'package:student_manag_provider/provider/edit_provider.dart';
+import 'package:student_manag_provider/provider/home_provider.dart';
 import 'package:student_manag_provider/provider/splash_screen_provider.dart';
+import 'package:student_manag_provider/provider/student_detail_provider.dart';
 import 'package:student_manag_provider/view/splash_screen.dart';
 
 void main() {
@@ -15,6 +19,11 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_)=> SplashProvider()),
+        ChangeNotifierProvider(create: (_)=>HomeProvider()),
+        ChangeNotifierProvider(create: (_)=>AddStudentProvider()),
+        ChangeNotifierProvider(create: (_) => StudentDetailProvider()),
+        ChangeNotifierProvider(create: (_)=>EditStudentProvider())
+
       ],
       child: MaterialApp(
         

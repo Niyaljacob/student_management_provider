@@ -71,6 +71,7 @@ class HomeScreen extends StatelessWidget {
         ).then((value) => homeProvider.refreshStudentList());
       },
       child: Card(
+        color: index.isEven ? Colors.white : Colors.green[200],
         child: ListTile(
           
           leading: CircleAvatar(

@@ -23,7 +23,7 @@ class HomeScreen extends StatelessWidget {
         backgroundColor:Tcolo.primarycolor1,
         title: !homeProvider.isSearching
             ? const Text('Student List', style: titletxt)
-            : TextField(
+            : TextField(                  
                 style: const TextStyle(color: Colors.white),
                 onChanged: (query) {
                   homeProvider.filterStudents(query);

@@ -6,7 +6,7 @@ class SplashProvider extends ChangeNotifier {
     await Future.delayed(const Duration(seconds: 2));
     Navigator.of(context).pushReplacement(
       MaterialPageRoute(
-        builder: (ctx) => HomeScreen(),
+        builder: (ctx) => const HomeScreen(),
       ),
     );
   }

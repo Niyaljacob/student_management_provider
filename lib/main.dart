@@ -31,10 +31,8 @@ class MyApp extends StatelessWidget {
         title: 'Students',
         theme: ThemeData(
          primarySwatch: Colors.blue
-         
-         
         ),
-        home:SplashScreen(),
+        home:const SplashScreen(),
       
       ),
     );
